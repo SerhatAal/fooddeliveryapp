@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/foodListFragment">
+
+    <fragment
+        android:id="@+id/foodListFragment"
+        android:name="com.kotlinegitim.fooddeliveryapp.ui.food_list.FoodListFragment"
+        android:label="fragment_food_list"
+        tools:layout="@layout/fragment_food_list" >
+        <action
+            android:id="@+id/action_foodListFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderResultFragment"
+        android:name="com.kotlinegitim.fooddeliveryapp.ui.result.OrderResultFragment"
+        android:label="fragment_order_result"
+        tools:layout="@layout/fragment_order_result" >
+        <action
+            android:id="@+id/action_orderResultFragment_to_foodListFragment"
+            app:destination="@id/foodListFragment"
+            app:popUpTo="@id/orderResultFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.kotlinegitim.fooddeliveryapp.ui.food_basket.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/action_basketFragment_to_orderResultFragment"
+            app:destination="@id/orderResultFragment"
+            app:popUpTo="@id/basketFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="foodBasket"
+            app:argType="com.kotlinegitim.fooddeliveryapp.entity.Food" />
+    </fragment>
+</navigation>

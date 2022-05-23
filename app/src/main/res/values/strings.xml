@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Food Delivery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="food_name">Food Name</string>
+    <string name="food_price">0 ₺</string>
+    <string name="add_food">+</string>
+    <string name="food_amount">1</string>
+    <string name="add_to_basket">Add To Basket</string>
+    <string name="substract_food">-</string>
+    <string name="total_price">200₺</string>
+    <string name="order_and_pay">Order and Pay</string>
+    <string name="my_basket">My Basket</string>
+    <string name="food_amount_in_basket">0</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="empty_state">Your Basket Is Empty</string>
+    <string name="food_detail">Food Detail</string>
+    <string name="food_list_title">Food List</string>
+    <string name="basket_title">Your Basket</string>
+    <string name="your_food_in_basket">your food in basket</string>
+    <string name="delete_button">delete</string>
+    <string name="thanks_for_your_order">Thanks for your order</string>
+    <string name="keep_looking_food">Keep Looking Food</string>
+    <string name="delete_are_you_sure">Are you sure you want to DELETE ?</string>
+    <string name="delete_positive">Delete</string>
+    <string name="cancel_delete">Cancel</string>
+    <string name="back_button">back button</string>
+    <string name="food_image">image of food</string>
+</resources>
